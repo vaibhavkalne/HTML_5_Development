@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        table, th,td{
+            border: 3px solid lightskyblue;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+        table{
+            width: 100%;
+            box-shadow: 0 0 20px pink;
+        }
+        #red thead{
+            background-color: yellow;
+            color: red;
+        }
+        #red tbody{
+            background-color: lightgray;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Simple Table -->
+    <h2> Simple Table </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Vaibhav</td>
+            <td>Aurangabad</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mahesh</td>
+            <td>Jalna</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shubham</td>
+            <td>Nashik</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Table with Col Span -->
+    <h2> Table with Col Span </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>S.NO</th>
+            <th colspan="2">NAME & ADDRESS</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Vaibhav</td>
+            <td>Aurangabad</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mahesh</td>
+            <td>Jalna</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shubham</td>
+            <td>Nashik</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Table With Row Span -->
+    <h2> Table With Row Span </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>Vaibhav</td>
+            <td>Aurangabad</td>
+        </tr>
+        <tr>
+            >
+            <td>Mahesh</td>
+            <td>Jalna</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Shubham</td>
+            <td>Nashik</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Custom Table with CSS -->
+    <h2> Custom Table with CSS </h2>
+    <table id="red">
+        <thead>
+        <tr>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Vaibhav</td>
+            <td>Aurangabad</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mahesh</td>
+            <td>Jalna</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shubham</td>
+            <td>Nashik</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
